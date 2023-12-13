@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../components/header'
 import Contacts from '../components/Contacts'
 
-import { Link } from 'gatsby'
 import Catalogcomponent from '../components/Catalog-component'
 import WatsapComponent from '../components/WatsapComponent'
 

@@ -3,84 +3,89 @@ import Header from '../components/header'
 import '../style/Tovar.css'
 import '../style/footer.css'
 
-import Q from '../images/1.png'
-import W from '../images/2.png'
-import E from '../images/3.png'
-import R from '../images/4.png'
-import T from '../images/5.png'
-import Y from '../images/6.png'
+import Items from '../components/Items'
+import ShowFullItem from '../components/ShowFullItem';
 
-export default function Software() {
-  return (
-    <>
-      <Header />
-      <div className="size-spisok">
-        <h1 className="left-3  tovar-text-size tovar-buttom blac">Программное обеспечение</h1>
-      </div>
-      <div className='tovar-buttom'>
-          <div className='flex-tovar-new'>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={Q}></img>
-                </div>
-                <div>
-                  <p className='new-opisanie'>Моноблок av tech pro</p>
-                </div>
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={W}></img>
-                </div>
-                <p className='new-opisanie'>Mонитор Acer</p>
+import A1 from '../images/Tovar/Windows_logo_Cyan_rgb_D.png'
+import A2 from '../images/Tovar/icons8-ос-mac-500-removebg-preview.png'
+import A3 from '../images/Tovar/Linux-Logo.png'
+import A4 from '../images/Tovar/Webp.net-resizeimage-21.png'
+import A5 from '../images/bird@2x.png'
 
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={E}></img>
-                </div>
-                <p className='new-opisanie'>Монитор Lg</p>
+class Equipment extends React.Component {
+  constructor(prQ) {
+    super(prQ)
+    this.state = {
+      item: [
+        {
+          id: 81,
+          title: 'Microsoft Windows',
+          desc: 'Используется на множестве устройств, включая персональные компьютеры, ноутбуки и серверы.',
+          image: A1,
+          more:'Windows — группа семейств коммерческих проприетарных операционных систем корпорации Microsoft, ориентированных на управление с помощью графического интерфейса. ',
 
+        },
+        {
+          id: 82,
+          title: 'macOS',
+          desc: 'Интеграция с другими продуктами Apple, высокий уровень безопасности.',
+          more:'macOS — проприетарная операционная система компании Apple. Является преемницей Mac OS 9. Семейство операционных систем macOS является вторым по распространённости для десктопа.',
+          image: A2,
+
+        },
+        {
+          id: 83,
+          title: 'Linux',
+          desc: 'Открытый исходный код, разработка сообществом.',
+          image: A3,
+          more: "Linux — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты.",
+
+        },
+        {
+          id: 84,
+          title: 'Roqed',
+          desc: 'Позволяет вам создавать собственные слайд-шоу с использованием 3D-моделей',
+          image: A4,
+          more: "Roqed позволяет вам создавать собственные слайд-шоу с использованием 3D-моделей, дополняя ваши презентации интерактивными элементами и специальными вопросами для проверки знаний. ",
+
+        },
+        {
+          id: 85,
+          title: 'mozaBook',
+          desc: 'Предназначенное для использования на интерактивных панелях в учебных классах',
+          image: A5,
+          more: "mozaBook - это программное обеспечение для презентаций, предназначенное для использования на интерактивных панелях в учебных классах.",
+
+        },
+      ],
+      ShowFullItem: false,
+      fullItem: {}
+    }
+    this.onShowItem = this.onShowItem.bind(this)
+  }
+  render() {
+    return (
+      <>
+        <Header />
+        <div className='font-sizw-catalog'>
+          <div className="bloc-80">
+            <div className="bacground2">
+              <div className="size-spisok blac">
+                <h1 className="left-3 color font-sizw-catalog">Программное обеспечение</h1>
               </div>
             </div>
           </div>
         </div>
-        <div className='tovar-buttom'>
-          <div className='flex-tovar-new'>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={R}></img>
-                </div>
-                <div>
-                  <p className='new-opisanie'>Ноутбук hp 250</p>
-                </div>
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={T}></img>
-                </div>
-                <p className='new-opisanie'>Ноутбук Acer Aspire</p>
 
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={Y}></img>
-                </div>
-                <p className='new-opisanie'>Lenovo ideapad s 145</p>
+        <Items onShowItem={this.onShowItem} item={this.state.item} />
+        {this.state.ShowFullItem && <ShowFullItem item={this.state.fullItem} onShowItem={this.onShowItem} />}
+      </>
+    )
+  }
+  onShowItem(item) {
+    this.setState({ fullItem: item })
+    this.setState({ ShowFullItem: !this.state.ShowFullItem });
+  }
 
-              </div>
-            </div>
-          </div>
-        </div>
-    </>
-  )
 }
+export default Equipment

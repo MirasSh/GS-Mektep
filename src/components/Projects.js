@@ -21,53 +21,53 @@ export default function Projects() {
                                 <div className="container2">
                                     <div className="widht-110">
                                         <a href="https://goldenstar.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo8}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo8}></img>
                                         </a>
                                     </div>
                                     <div className="widht-110">
                                         <a href="https://aforma.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo9}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo9}></img>
                                         </a>
                                     </div>
                                     <div className="widht-110">
                                         <a href="https://gsbuilding.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo7}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo7}></img>
                                         </a>
                                     </div>
                                 </div>
                                 <div className="container2">
                                     <div className="widht-110">
                                         <a href="https://freshfish.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo1}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo1}></img>
 
                                         </a>
                                     </div>
                                     <div className="widht-110">
                                         <a href="https://atekagro.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo2}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo2}></img>
 
                                         </a>
                                     </div>
                                     <div className="widht-110">
                                         <a href="https://altyn-teke.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo3}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo3}></img>
                                         </a>
                                     </div>
                                 </div>
                                 <div className="container2">
                                     <div className="widht-110">
                                         <a href="https://lakefarm.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo4}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo4}></img>
                                         </a>
                                     </div>
                                     <div className="widht-110">
                                         <a href="https://premiumlamb.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo5}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo5}></img>
                                         </a>
                                     </div>
                                     <div className="widht-110">
                                         <a href="https://gslogotip.kz/">
-                                            <img className="width15 widht-100" alt="" src={MainLogo6}></img>
+                                            <img className="width64 widht-100" alt="" src={MainLogo6}></img>
                                         </a>
                                     </div>
                                 </div>

@@ -4,10 +4,10 @@ import Foto2 from '../images/mono.png'
 import Foto3 from '../images/3DD-removebg-preview (2).png'
 import Foto4 from '../images/labaratoria.png'
 import Foto5 from '../images/robo.png'
-import Foto6 from '../images/slide-6-removebg-preview.png'
+import Foto6 from '../images/cross-platform-development.jpg'
 import Foto7 from '../images/1674222492_pro-dachnikov-com-p-foto-shkolnie-parti-73-removebg-preview.png'
 import Foto8 from '../images/icon/Laba.png'
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 
 
 export default function Catalogcomponent() {
@@ -21,9 +21,9 @@ export default function Catalogcomponent() {
                             <h1 className="left-3 color font-sizw-catalog">Каталог</h1>
                             <div className="flex-spicok">
                                 <div className="flex-spisok">
-                                    <div className="max-80 auto-flex"><Link className="text-color-messege" to="/Interactive">
+                                    <div className="max-80 auto-flex"><Link className="text-color-messege" to="/Interactiv">
                                         <img className="widht-100" alt="" src={Foto} />
-                                        <p className="button-more color">Интерактивные панели, OPS, Аксессуары</p>
+                                        <p className="button-more color">Интерактивные панели и OPS</p>
                                         <p className="text-p">Повышайте эффективность взаимодействия с нашими современными решениями.
                                         </p></Link>
                                     </div>
@@ -57,8 +57,8 @@ export default function Catalogcomponent() {
                                 <div className="flex-spisok">
                                     <div className="max-80 auto-flex"><Link className="text-color-messege" to="/Sets">
                                         <img className="widht-100" alt="" src={Foto5}></img>
-                                        <p className="color">Робототехнические наборы и станки</p>
-                                        <p className="text-p">Погрузитесь в мир робототехники с нашими инновационными наборами и станками.
+                                        <p className="color">Робототехнические наборы и оборудование</p>
+                                        <p className="text-p">Погрузитесь в мир робототехники с нашими инновационными наборами и оборудование.
                                         </p></Link>
                                     </div>
                                 </div>

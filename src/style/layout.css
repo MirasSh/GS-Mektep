@@ -351,6 +351,9 @@ body {
 .top-text20 {
   margin-top: 10%;
 }
+.top3{
+  margin-top: 3%;
+}
 
 .wiaht-50 {
   width: 50%;
@@ -377,6 +380,7 @@ body {
 .width15 {
   width: 80%;
 }
+
 
 .vh70 {
   height: 70vh;
@@ -706,9 +710,11 @@ body {
 }
 
 .font-sizw-catalog{
-  font-size: 2.3rem;
+  font-size: 2rem;
   padding: 25px;
 }
 .buttom{
   margin-bottom: 5%;
 }
+
+

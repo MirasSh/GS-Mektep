@@ -5,9 +5,13 @@ export class Item extends Component {
     return (
       <>
         <div className='item'>
-          <img src={this.props.item.image} onClick={() => this.props.onShowItem(this.props.item)} />
-          <h2>{this.props.item.title}</h2>
-          <p>{this.props.item.desc}</p>
+          <div className='tov'>
+            <img src={this.props.item.image} onClick={() => this.props.onShowItem(this.props.item)} />
+          </div>
+          <div className='item-discription'>
+            <h3>{this.props.item.title}</h3>
+            <p>{this.props.item.desc}</p>
+          </div>
         </div>
       </>
 

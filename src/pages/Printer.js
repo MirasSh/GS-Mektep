@@ -3,86 +3,60 @@ import Header from '../components/header'
 import '../style/Tovar.css'
 import '../style/footer.css'
 
-import Q from '../images/1.png'
-import W from '../images/2.png'
-import E from '../images/3.png'
-import R from '../images/4.png'
-import T from '../images/5.png'
-import Y from '../images/6.png'
+import Items from '../components/Items'
+import ShowFullItem from '../components/ShowFullItem';
 
-export default function Printer() {
-  return (
-    <>
-      <Header />
-      <div>
-        <div className="size-spisok">
-          <h1 className="left-3  tovar-text-size tovar-buttom blac"> 3D принтеры</h1>
-        </div>
-        <div className='tovar-buttom'>
-          <div className='flex-tovar-new'>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={Q}></img>
-                </div>
-                <div>
-                  <p className='new-opisanie'>Моноблок av tech pro</p>
-                </div>
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={W}></img>
-                </div>
-                <p className='new-opisanie'>Mонитор Acer</p>
+import Printers from '../images/Tovar/zmorph_fab_front.png'
+import Printers2 from '../images/Tovar/195545503_3d-printer-creality.png'
 
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={E}></img>
-                </div>
-                <p className='new-opisanie'>Монитор Lg</p>
-
+class Printer extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      item: [
+        {
+          id: 1,
+          title: 'ZMORPH FAB',
+          more: 'Расширьте свои производственные возможности благодаря доступу к более чем 50 профессиональным материалам как для субтрактивного, так и для аддитивного производства.',
+          image: Printers,
+          desc:'От пластиковой нити для 3D-печати до мягких металлов и твердых пластиков.'
+        },
+        {
+          id: 2,
+          title: '3D принтер Creality Ender-3 Neo',
+          more: '3D-принтер Creality Ender-3 Neo это новая улучшенная версия самой популярной бюджетной модели среди пользователей Creality Ender-3.В Ender-3 Neo появился цельнометаллический боуден-экструдер, автокалибровка CR-Touch собственной разработки Creality, гофрированный теплоотвод для лучшего рассеивания тепла и многое другое.',
+          image: Printers2,
+          desc:'Более простая и быстрая калибровка платформы CR Touch'
+        }
+      ],
+      ShowFullItem: false,
+      fullItem: {}
+    }
+    this.onShowItem = this.onShowItem.bind(this)
+  }
+  render() {
+    return (
+      <>
+        <Header />
+        <div className='font-sizw-catalog'>
+          <div className="bloc-80">
+            <div className="bacground2">
+              <div className="size-spisok blac">
+                <h1 className="left-3 color font-sizw-catalog">3D принтеры</h1>
               </div>
             </div>
           </div>
         </div>
-        <div className='tovar-buttom'>
-          <div className='flex-tovar-new'>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={R}></img>
-                </div>
-                <div>
-                  <p className='new-opisanie'>Ноутбук hp 250</p>
-                </div>
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={T}></img>
-                </div>
-                <p className='new-opisanie'>Ноутбук Acer Aspire</p>
 
-              </div>
-            </div>
-            <div className='tovar-size'>
-              <div className='flex-tovar'>
-                <div>
-                  <img className='tovar' alt='' src={Y}></img>
-                </div>
-                <p className='new-opisanie'>Lenovo ideapad s 145</p>
+        <Items onShowItem={this.onShowItem} item={this.state.item} />
+        {this.state.ShowFullItem && <ShowFullItem item={this.state.fullItem} onShowItem={this.onShowItem} />}
+      </>
+    )
+  }
+  onShowItem(item) {
+    this.setState({ fullItem: item })
+    this.setState({ ShowFullItem: !this.state.ShowFullItem });
+  }
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  )
 }
+export default Printer

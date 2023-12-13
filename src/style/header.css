@@ -1,34 +1,35 @@
 /* Общие стили для меню */
-.header-top{
+.header-top {
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px; 
-    width: 60%;  
+    padding: 10px;
+    width: 60%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
-.menu-style{
+
+.menu-style {
     /* background-color: rgb(197 83 93); */
-    font-family: 'Manrope',Arial,sans-serif;
+    font-family: 'Manrope', Arial, sans-serif;
     font-size: 14px;
     background-color: white;
 }
-.logo1{
-    width: 40%;
-}
+
 .menu-pozition {
     display: flex;
     align-items: center;
     font-size: clamp(10px, 2rem, 20px);
     width: 100%;
+    white-space: nowrap;
 }
 
 .menu-pozition nav {
@@ -50,6 +51,10 @@
     color: #1784b1;
 }
 
+.logo1 {
+    width: 40%;
+}
+
 @media screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
@@ -68,3 +73,43 @@
 }
 
 
+
+
+.menu-position {
+    display: flex;
+    flex-direction: column;
+    /* Для мобильных устройств, меняем направление на вертикальное */
+}
+
+/* Добавляем медиа-запрос для устройств с шириной экрана меньше 600px (пример) */
+@media (max-width: 600px) {
+    .menu-position {
+        flex-direction: row;
+        /* Для мобильных устройств, меняем направление на горизонтальное */
+        justify-content: space-around;
+        /* Добавляем пространство между элементами */
+    }
+
+    .menu-position nav {
+        margin-bottom: 10px;
+        /* Добавляем отступ между элементами в горизонтальной компоновке */
+    }
+}
+
+
+.flex5{
+    display: flex;
+    width: 50%;
+}
+
+.wid{
+    width: 20%;
+}
+
+.padding1{
+    padding: 10px;
+
+}
+.logo2{
+    width: 70%;
+}

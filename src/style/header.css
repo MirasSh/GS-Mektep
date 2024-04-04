@@ -1,0 +1,190 @@
+/* Общие стили для меню */
+.header-top {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.menu {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-style {
+  /* background-color: rgb(197 83 93); */
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 14px;
+  background-color: white;
+}
+
+.menu-pozition {
+  display: flex;
+  align-items: center;
+  font-size: clamp(10px, 2rem, 20px);
+  width: 100%;
+  white-space: nowrap;
+}
+
+.menu-pozition nav {
+  margin-right: 20px;
+  /* Расстояние между пунктами меню */
+}
+
+.menu-pozition nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.menu-pozition nav a:hover {
+  color: #1784b1;
+}
+
+.logo1 {
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    align-items: flex-start;
+  }
+
+  .menu-pozition {
+    margin-top: 10px;
+    /* Расстояние между логотипом и пунктами меню в мобильной версии */
+  }
+
+  .menu-pozition nav {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.menu-position {
+  display: flex;
+  flex-direction: column;
+  /* Для мобильных устройств, меняем направление на вертикальное */
+}
+
+/* Добавляем медиа-запрос для устройств с шириной экрана меньше 600px (пример) */
+@media (max-width: 600px) {
+  .menu-position {
+    flex-direction: row;
+    /* Для мобильных устройств, меняем направление на горизонтальное */
+    justify-content: space-around;
+    /* Добавляем пространство между элементами */
+  }
+
+  .menu-position nav {
+    margin-bottom: 10px;
+    /* Добавляем отступ между элементами в горизонтальной компоновке */
+  }
+}
+
+.flex5 {
+  display: flex;
+  width: 13%;
+}
+
+.wid {
+  width: 20%;
+}
+
+.padding1 {
+  padding: 10px;
+}
+.logo2 {
+  width: 90%;
+}
+
+
+.burger-menu {
+  display: none; /* Скрываем бургер-меню по умолчанию */
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    align-items: flex-start;
+  }
+
+  .menu-pozition {
+    margin-top: 10px;
+  }
+
+  .menu-pozition nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  .burger-menu {
+    display: block; /* Показываем бургер-меню на мобильных устройствах */
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .burger-menu-container {
+    position: absolute;
+    right: 30px;
+  }
+
+  .burger-menu div {
+    width: 30px;
+  }
+
+  .menu-position {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .menu-position nav {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Граница между пунктами меню в мобильной версии */
+    padding: 10px;
+  }
+
+  .menu-position.show {
+    display: flex;
+  }
+  .none {
+    display: block;
+  }
+  .menu-pozition {
+    display: none;
+  }
+}
+
+.none {
+  display: none;
+}
+

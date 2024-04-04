@@ -1,0 +1,177 @@
+@media only screen and (max-width: 600px) {
+  .flex5 {
+    width: 100%;
+    max-width: 300px; /* На экранах шириной до 600px максимальная ширина будет 300px */
+  }
+  .center1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .font1rem {
+    font-size: 0.4rem;
+  }
+  .margin20 {
+    font-size: 1.5rem;
+    margin-top: 30%;
+  }
+  .text-small {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .button-atom {
+    font-size: 0.5rem;
+    padding: 15px;
+  }
+
+  .bag {
+    height: 39vh;
+  }
+  .flex-spicok2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .blok-about {
+    width: 80%;
+  }
+  .small-1 {
+    height: 150px;
+    border: 1px solid;
+    font-size: 0.6rem;
+  }
+  .font1rem2 {
+    font-size: 0.3rem;
+  }
+  .size-spisok {
+    width: 100%;
+  }
+  .bloc-81 {
+    width: 100%;
+  }
+  .text-p {
+    padding: 7%;
+  }
+  .wiaht-50 {
+    width: 100%;
+  }
+  .font1remreal {
+    margin-top: 10%;
+    font-size: 0.8rem;
+    width: 180%;
+  }
+  .bloc-bagraund {
+    height: 50vh;
+  }
+  .wiaht-40 {
+    width: 50%;
+  }
+  .font-sizw-catalog {
+    font-size: 1rem;
+  }
+  .smoll2 {
+    font-size: 1rem;
+  }
+  .about1 {
+    font-size: 1rem;
+  }
+  .font {
+    font-size: 1rem;
+  }
+  .flex-contact {
+    width: 100%;
+  }
+  .text-color-messege {
+    font-size: 0.6rem;
+  }
+  #whatsapp-block {
+    width: 8%;
+  }
+  main h3,
+  main p {
+    color: #333;
+    font-size: 0.7rem;
+  }
+  .small5 {
+    font-size: 0.5rem;
+  }
+  .smoll3 {
+    font-size: 0.6rem;
+  }
+  .bloc-82 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    margin-top: 10%;
+  }
+  .flexdirection2 {
+    flex-direction: column;
+  }
+  .blor-flex2 {
+    display: flex;
+    gap: 20px;
+  }
+  .adaptive50 {
+    width: 50%;
+  }
+  .one {
+    border-radius: 10px;
+    font-size: 3rem;
+  }
+  .fontsize05rem {
+    font-size: 0.5rem;
+  }
+  .flex-widht {
+    width: 100%;
+  }
+  .heght {
+    height: 60vh;
+  }
+  .full-item > div {
+    flex-direction: column;
+  }
+  .tovar-widht img {
+    width: 100%;
+  }
+  .rem07 {
+    font-size: 0.7rem;
+  }
+  .rem09{
+    font-size: 0.9rem;
+  }
+
+}
+
+.none1{
+  width: 70%;
+  height: 15vw;
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .blor-flex2 {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .tovar-widht img {
+    width: 70%;
+  }
+  .none1{
+    width: 70%;
+    height: 15vw;
+    display: block;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  iframe {
+    height: 30vh; /* Измените значение по вашему усмотрению */
+  }
+}

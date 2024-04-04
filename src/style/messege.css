@@ -1,0 +1,150 @@
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    /* Установите максимальную ширину формы по вашему усмотрению */
+    margin: 0 auto;
+    /* Чтобы форма оставалась по центру страницы */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc; /* Используйте цвет вашего выбора */
+    outline: none; /* Убирает рамку при фокусе (опционально, в зависимости от ваших предпочтений) */
+    transition: border-bottom 0.3s ease; /* Анимация для плавного перехода */
+  
+}
+
+input:hover {
+    border-bottom: 2px solid #1784b1; /* Используйте цвет вашего выбора для подчеркивания при наведении */
+  }
+.button1 {
+    padding: 10px;
+    background-color: #1784b1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: #080808;
+}
+
+.widht-messege{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.flex-messege{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-color-messege{
+    color: white;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+.text-color-messege2{
+    color: white;
+    margin-bottom: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.color-white{
+    color: white;
+}
+
+.new-class{
+    color: white;
+    text-decoration: none;
+}
+
+.flex-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-about{
+    background-color: white;
+}
+.element{
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-element{
+    display: flex;
+    gap: 40px;
+}
+
+.widht-contact{
+    width: 10%;
+}
+
+.flex1{
+    display: flex;
+}
+
+.top-style{
+    margin-top: 20%;
+}
+
+.text-size-contact{
+    text-align: center;
+
+}
+.buttom-contact{
+    background-color: transparent;
+    margin-bottom: 10%;
+    color: transparent;
+}
+
+.location{
+    width: 3%;
+}
+.about1{
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.font {
+    font-size: clamp(12px, 6vw, 35px);
+}

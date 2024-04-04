@@ -1,0 +1,92 @@
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+main .item img {
+  width: 80%;
+  height: 90%;
+  border-radius: 10px 10px 0 0;
+  transition: transform 500ms ease;
+  /* background-color: white; */
+}
+main .item img:hover,
+.full-item img:hover {
+  transform: scale(1.05);
+}
+
+main h3,
+main p {
+  color: #333;
+}
+
+.item {
+  cursor: pointer;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tovar-widht img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.full-item {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  background: #222222e2;
+  z-index: 9999;
+  overflow: auto;
+}
+
+.full-item > div {
+  width: 80%;
+  position: relative;
+  margin: 10% auto;
+  padding: 40px 30px;
+  background-color: rgb(246 246 246);
+  border-radius: 9px;
+}
+
+.tovar-flex {
+  display: flex;
+}
+.x {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.text-pozition {
+  margin-top: 5%;
+}
+.tovar-widht {
+  width: 100%;
+}
+.exit {
+  width: 3%;
+}
+
+.tov {
+  display: flex;
+  justify-content: center;
+}
+
+.item-discription {
+  height: 100px;
+}
